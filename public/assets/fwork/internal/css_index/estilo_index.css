@@ -1,0 +1,107 @@
+body{ 
+	background: url(../Img/fondos/ABB_Ability.jpg) no-repeat center top;
+	background-size: cover; 
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+.login-content{
+	display: flex;
+	justify-content: center;
+	height: max-content;
+	margin: 1% 0;
+	width:100%;
+}
+.login-wrap{
+	margin: 0;
+	padding: 10px 0;
+	opacity:0.9;
+	background-color: aliceblue;
+	border-radius: 5%;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+ img{
+	padding: 0%;
+	width: 400px;
+	position: relative;
+	z-index: 9;
+}
+.tabs{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: #2551b0;
+}
+.tab_{
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+label{
+	width: 100%;
+}
+.tab_ input[type="radio"]{
+	cursor: pointer;
+	opacity: 0;
+	position: fixed;
+	width: 100%;
+}
+.tab_ :checked{
+	border: 1px solid red;
+}
+.tab_ input[type="radio"]:checked + label {
+	cursor: pointer;
+	color:#CE811B;
+}
+
+.login-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 30px 5%;
+}
+
+
+.form_ label{
+	font-size: small;
+	font-weight: bold;
+	color: #CE811B;
+	margin: 0;
+	padding: 0;
+}
+input[type="password"] , 
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+	width: 100%;
+	height: 40px;
+	border-radius: 5%;
+	margin: 0 0 15px 0;
+	border: transparent;
+	box-shadow: 1px 6px 5px 0 #2551b0;
+}
+
+input[type="submit"]{
+	background-color: #CE811B;
+	color: aliceblue;
+}
+#rec_user{
+	display: none;
+}
+input[type="password"] + input[type="text"]{
+	width: 100%;
+}
+.foot-lnk{
+	display: flex;
+	justify-content: space-around;
+	font-size: smaller;
+}
